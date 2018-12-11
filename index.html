@@ -1,14 +1,159 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Bootstrap Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 </head>
+
+<style>
+    :root {
+    --teal:#4aaaa5;
+    --main_content_background: #ececec;
+    --light-gray: #dddddd;
+    --general_font_color:#777777;
+    }
+
+    body{
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        color: var(--general_font_color);
+    }
+
+    .highlight{
+        color: var(--teal);
+    }
+
+  /*-----------HEADER-----------*/
+
+    #name {
+        float: left;
+        background: var(--teal);
+        padding: 15px 25px;
+    }
+
+    #name h2{
+        color: white;
+        margin-bottom: 0;
+    }
+
+    header {
+        padding-top: 0;
+    }
+
+    .navbar {
+        width: 250px;
+        float: right;
+        padding-top: 23px;
+    }
+
+    .clearFloat {
+        clear: left;
+    }
+
+    /*------------ABOUT ME-----------*/
+
+    #main-background{
+         background:  var(--main_content_background);
+         height: 600px;
+         padding-top: 30px;
+         border-top: 1px solid var(--light-gray);
+    }
+
+    #sub-background{
+        background-color: white;
+        padding: 25px;
+    }
+
+    #sub-background img{
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+        float: left;
+        margin-right: 22px;
+        margin-bottom: 5px;
+    }
+
+    /*------------FOOTER-----------*/
+
+    footer{
+        background-color: gray;
+        text-align: center;
+        height: 70px;
+        border-top: 5px solid var(--teal);
+    }
+
+    footer p{
+        padding-top: 36px;
+        color: white;
+    }
+
+    
+</style>
+
 <body>
-    HELLO
+    <div class="container">
+        <header>
+            
+                <div id="name">
+                    <h2>Khoa Nguyen</h2>
+                </div>
+            
+
+            <div class="navbar">
+                <div>About</div>
+                <div>Portfolio</div>
+                <div>Contacts</div>
+            </div>
+            <div class="clearFloat"></div>
+        </header>
+    </div>
+
+    <section id="main-background">
+        <div class="container">
+            <div id="sub-background">
+            <h2><span class="highlight">About Me</span></h2>
+            <hr>
+            <img src="./assets/images/pic1.png" alt="Picture of Me">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nulla sed numquam neque reiciendis laborum dolorum, non enim totam et minima cumque nemo veritatis beatae deleniti exercitationem voluptatem, vero recusandae illo blanditiis fugiat. Ab ipsa eum, dolores dolorem, molestiae minima, nihil obcaecati earum amet non at eligendi qui. Magni, corrupti.
+                <br><br>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore culpa quidem nihil nesciunt sapiente nam, aspernatur voluptatum. Laudantium reiciendis incidunt aperiam et amet non. Vitae dolorem eaque totam facere!
+                <br><br>
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ducimus vel assumenda aliquid repellat, provident vitae deserunt omnis iusto optio ex deleniti corporis obcaecati quibusdam unde dolorum repudiandae animi velit quae, quas alias? Rem, aspernatur?
+            </p>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="container">
+        <p>
+            Copyright &copy
+        </p>
+    </div>
+    </footer>
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br>
+    <img style="width:600px" src="https://ucb.bootcampcontent.com/UCB-Coding-Bootcamp/UCBSF201811FSF5/raw/master/01-html-git-css/02-Homework/Instructions/Images/portfolio-about-me.png">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
