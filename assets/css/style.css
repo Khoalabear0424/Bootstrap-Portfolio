@@ -60,7 +60,7 @@
 
     #main-background {
         background: var(--main_content_background);
-        height: 600px;
+        height: 1000px;
         padding-top: 30px;
         border-top: 1px solid var(--light-gray);
     }
@@ -84,12 +84,12 @@
     footer {
         background-color: gray;
         text-align: center;
-        height: 70px;
+        height: 40px;
         border-top: 5px solid var(--teal);
     }
 
     footer p {
-        padding-top: 36px;
+        padding-top: 10px;
         color: white;
         margin-bottom: 0;
     }
@@ -107,4 +107,105 @@
         color: #fff;
         background-color: turquoise;
         border-color: white;
+    }
+
+
+    
+    
+
+    
+
+    /*------------Responsive 980px-----------*/
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+            
+            .container {
+            max-width: 900px;
+            margin: 0px 30px;
+            padding-right: 35px;
+            }
+    
+            #sub-background{
+            width: 600px;
+            }
+    
+            .navbar{
+                width: 230px;
+                padding-right: 30px;
+            }
+     }
+
+     /*------------Responsive 768px-----------*/
+     @media (min-width: 640px) and (max-width: 767.98px) { 
+        
+            .container {
+            max-width: 700px;
+            margin: 0px 10px;
+            padding-right: 35px;
+            }
+
+            #sub-background{
+            min-width: 200px;
+            }
+        
+            .navbar{
+            width: 230px;
+            padding-right: 30px;
+            }
+        }
+
+
+        
+      /*------------Responsive 640px-----------*/
+    @media (max-width: 639.98px) {
+            .container {
+            max-width: 100%;
+            margin: 0px 10px;
+            padding-right: 35px;
+            }
+
+
+            #sub-background img {
+                width: 100%;
+                height: 525px;
+                object-fit: cover;
+                display: block;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            #name {
+                display: block;
+                background: var(--teal);
+                padding: 15px 25px;
+                width: 100%;
+                text-align: center;
+            }
+
+            #name h3 {
+                color: white;
+                margin-bottom: 0;
+            }
+        
+            header {
+                padding-top: 0;
+            }
+        
+            .navbar {
+                width: 100%;
+                float: left;
+                padding-top: 20px;
+                padding-right: 30px;
+                padding-right: 80px;
+                padding-left: 80px;
+            }
+            
+            .navbar a {
+                text-decoration: none;
+                color: var(--general_font_color);
+                text-align: center;
+            }
+
+            #main-background {     
+                height: 1300px;
+            }
     }
